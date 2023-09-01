@@ -1,0 +1,370 @@
+body {
+    background: transparent !important;
+}
+
+.inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#slide {
+    background: #000;
+    position: relative;
+    z-index: 9;
+}
+
+.section {
+    background: transparent;
+}
+
+.section .bgc01 {
+    background: url(../images/bg01.png) no-repeat center top/cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section .bgc01::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+
+.section .bgc02 {
+    background: url(../images/bg02.jpg) no-repeat center top/cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section .bgc03 {
+    background: url(../images/pbg04.jpg) no-repeat center top/cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#m01 .text {
+    color: #fff;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 200px;
+    font-weight: 700;
+    opacity: 0;
+    position: relative;
+    z-index: 99;
+}
+
+#m01 .text span {
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+#m01 .s_text {
+    color: #fff;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
+    opacity: 0;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+#m01 .s_text::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 243px;
+    left: 0;
+    top: 90px;
+    background: #ddd;
+
+}
+
+#m01 .s_text::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 310px;
+    width: 30px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(-45deg);
+    transform-origin: right bottom;
+}
+
+
+#m02 .text {
+    position: absolute;
+    top: 240px;
+    right: 560px;
+    color: #fff;
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 0;
+    z-index: 99;
+    transition: 1s;
+}
+
+#m02 .text.on {
+    right: 790px;
+    transition: 1s;
+}
+
+#m02 .s_text {
+    position: absolute;
+    top: 400px;
+    right: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0;
+    line-height: 40px;
+    z-index: 99;
+    transition: 1s;
+}
+
+#m02 .s_text.on {
+    right: 600px;
+    transition: 1s;
+}
+
+#m02 .s_text strong {
+    font-weight: 500;
+}
+
+#m02 .s_text .txt_top {
+    display: flex;
+    gap: 50px;
+}
+
+#m02 .s_text .txt_top .icon {
+    display: flex;
+    gap: 50px;
+}
+
+#m02 .s_text .txt_top .icon img {
+    max-width: 50px;
+}
+
+#m02 .s_text .txt_bot {
+    display: flex;
+    gap: 50px;
+}
+
+#m02 .s_text .exp li {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+#m02 .bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#m02 .modal {
+    position: absolute;
+    top: 0;
+    right: -450px;
+    padding: 20px;
+    height: 100%;
+    z-index: 999;
+    background: #000;
+    transition: 1s;
+}
+
+#m02 .modal.on {
+    right: 50px;
+    transition: 1s;
+}
+
+#m02 .modal .modal_body {
+    width: 400px;
+    height: 100%;
+}
+
+#m02 .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+#m02 .swiper-slide img {
+    width: 100%;
+}
+
+#m02 .btn-open-popup {
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #000;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 18px 30px;
+}
+
+#slide .text {
+    position: absolute;
+    top: 180px;
+    left: 258px;
+    color: #fff;
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 0;
+    z-index: 99;
+}
+
+#slide .s_text {
+    position: absolute;
+    top: 300px;
+    padding: 50px;
+    background: #222;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0;
+    line-height: 40px;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1400px;
+}
+
+
+#slide .s_text .slide_lt {
+    line-height: 1.4;
+}
+
+#slide .s_text .slide_lt .content_tit {
+    margin-bottom: 20px;
+}
+
+#slide .s_text .slide_lt .content_tit span {
+    font-style: italic;
+    font-size: 40px;
+}
+
+#slide .s_text .slide_lt .content_tit strong {
+    font-size: 32px;
+}
+
+#slide .s_text .slide_lt .content_list {
+    margin-bottom: 70px;
+}
+
+#slide .s_text .slide_lt .content_list li {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#slide .s_text .slide_lt .content_list .content_tag {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#slide .s_text .slide_lt .content_list span {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+#slide .s_text .slide_lt .link a {
+    padding: 16px 40px;
+    background: #111;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+/* .section .text {
+    color: #fff;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 160px;
+    font-weight: 700;
+    opacity: 0;
+    position: relative;
+    z-index: 99;
+}
+
+
+.section .s_text {
+    color: #fff;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 300;
+    opacity: 0;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 99;
+} */
+
+
+.section.on .text {
+    animation: ani 1s both
+}
+
+.section.on .s_text {
+    animation: ani 1s 1s both
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+
+#slide .s_text .slide_rt {
+    height: 500px;
+}
+
+#slide .s_text .slide_rt .mac img {
+    position: absolute;
+    width: 800px;
+    margin-left: 50px;
+}
+
+#slide .s_text .slide_rt .semple img {
+    position: absolute;
+    width: 600px;
+    top: 80px;
+    left: 630px;
+    overflow: hidden;
+}
